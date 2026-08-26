@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ============================================================
+     AndroidManifest.xml
+     ============================================================
+     KEY AAOS POINTS:
+     1. Automotive feature: tells the system/store this is an IVI app.
+        Setting required="false" allows it to run on mobile emulators.
+     2. Permissions: Needed for CarPropertyManager / VHAL access.
+     3. Theme: Fixed to a valid Theme (DeviceDefault is standard for AAOS).
+     ============================================================ -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature android:name="android.hardware.type.automotive" android:required="false"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Car Service permissions -->
+    <uses-permission android:name="android.car.permission.CAR_INFO"/>
+    <uses-permission android:name="android.car.permission.CONTROL_CAR_CLIMATE"/>
+
+    <application
+        android:name=".AAOSApplication"
+        android:allowBackup="true"
+        android:label="AAOS Demo"
+        android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
