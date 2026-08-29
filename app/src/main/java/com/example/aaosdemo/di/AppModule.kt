@@ -1,25 +1,3 @@
-// ============================================================
-// di/AppModule.kt
-// ============================================================
-// DEPENDENCY INJECTION — Hilt Module.
-//
-// This is where the "wiring" happens.
-// Hilt reads these @Provides functions to know HOW to build
-// each dependency when a class asks for it via @Inject.
-//
-// HOW HILT WORKS (summary):
-//   1. @HiltAndroidApp on Application — bootstraps Hilt
-//   2. @AndroidEntryPoint on Activity/Fragment — enables injection there
-//   3. @HiltViewModel on ViewModel — Hilt creates it with injected params
-//   4. @Inject constructor(...) on a class — Hilt can create it automatically
-//   5. @Provides in a @Module — tells Hilt how to build an interface/3rd party
-//
-// WHY we need @Provides here:
-//   - ClimateRepository is an interface. Hilt can't instantiate an interface.
-//   - We tell Hilt: "when someone asks for ClimateRepository, give them ClimateRepositoryImpl"
-//   - FakeVhalDataSource has @Inject constructor so Hilt builds it automatically.
-// ============================================================
-
 package com.example.aaosdemo.di
 
 import com.example.aaosdemo.data.repository.*

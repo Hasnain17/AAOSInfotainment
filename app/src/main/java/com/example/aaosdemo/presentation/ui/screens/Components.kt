@@ -1,20 +1,3 @@
-// ============================================================
-// presentation/ui/screens/Components.kt
-// ============================================================
-// PRESENTATION LAYER — Reusable Compose Components.
-//
-// Shared UI building blocks used across multiple screens.
-// Building a component library avoids duplication and enforces
-// design consistency — critical in a large AAOS codebase.
-//
-// COMPOSE CONCEPTS DEMONSTRATED:
-//   • @Composable functions
-//   • Modifier chaining
-//   • Slot APIs (content: @Composable () -> Unit)
-//   • Animation with animateFloatAsState
-//   • Custom drawing with Canvas
-// ============================================================
-
 package com.example.aaosdemo.presentation.ui.screens
 
 import androidx.compose.animation.core.*

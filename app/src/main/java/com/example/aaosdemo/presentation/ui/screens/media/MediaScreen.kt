@@ -1,7 +1,3 @@
-// ============================================================
-// presentation/ui/screens/media/MediaScreen.kt
-// ============================================================
-
 package com.example.aaosdemo.presentation.ui.screens.media
 
 import androidx.compose.foundation.background

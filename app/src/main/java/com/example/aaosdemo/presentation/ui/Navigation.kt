@@ -1,19 +1,3 @@
-// ============================================================
-// presentation/ui/Navigation.kt
-// ============================================================
-// PRESENTATION LAYER — Navigation Graph.
-//
-// Compose Navigation replaces Android's FragmentManager.
-// We define routes as sealed class entries for type safety.
-//
-// HOW COMPOSE NAVIGATION WORKS:
-//   1. NavHost — the container that swaps Composables
-//   2. composable("route") — registers a screen for a route
-//   3. navController.navigate("route") — navigates to it
-//   4. hiltViewModel() inside each screen creates a scoped ViewModel
-//      (ViewModel is destroyed when you leave that screen's backstack entry)
-// ============================================================
-
 package com.example.aaosdemo.presentation.ui
 
 import androidx.compose.foundation.background

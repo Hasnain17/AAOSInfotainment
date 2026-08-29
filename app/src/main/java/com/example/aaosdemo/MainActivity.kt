@@ -17,12 +17,6 @@ import dagger.hilt.android.HiltAndroidApp
 // @HiltAndroidApp generates the Hilt component hierarchy.
 @HiltAndroidApp
 class AAOSApplication : Application()
-
-// ============================================================
-// MainActivity.kt
-// ============================================================
-// The single Activity in this app (Single Activity Architecture).
-// @AndroidEntryPoint enables Hilt injection for this Activity.
 @AndroidEntryPoint  // Enables Hilt for this Activity (and its ViewModels)
 class MainActivity : ComponentActivity() {
 

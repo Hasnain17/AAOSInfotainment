@@ -1,18 +1,3 @@
-// ============================================================
-// data/repository/RepositoryImpls.kt
-// ============================================================
-// DATA LAYER — Repository Implementations.
-//
-// Each class:
-//   1. Implements a domain interface (from domain/model/Repositories.kt)
-//   2. Holds a reference to the DataSource (injected by Hilt)
-//   3. Converts DataSource data if needed (e.g. adding error handling)
-//   4. Is injected into Use Cases via constructor injection
-//
-// Notice: the domain layer has NO idea these classes exist.
-// The ViewModel/UseCase only see the INTERFACE.
-// ============================================================
-
 package com.example.aaosdemo.data.repository
 
 import com.example.aaosdemo.data.datasource.FakeVhalDataSource

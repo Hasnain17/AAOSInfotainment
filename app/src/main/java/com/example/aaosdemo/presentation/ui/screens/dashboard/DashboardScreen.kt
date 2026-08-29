@@ -1,18 +1,3 @@
-// ============================================================
-// presentation/ui/screens/dashboard/DashboardScreen.kt
-// ============================================================
-// PRESENTATION LAYER — Dashboard Screen (Composable).
-//
-// The "home screen" of the IVI — shows speed, battery, nav info.
-//
-// COMPOSE CONCEPTS:
-//   • collectAsStateWithLifecycle() — observes StateFlow safely
-//     It cancels collection when the Composable leaves the screen.
-//     This is BETTER than collectAsState() for Android.
-//   • LaunchedEffect — runs a side effect when a key changes
-//   • Recomposition — Compose re-runs the Composable when state changes
-// ============================================================
-
 package com.example.aaosdemo.presentation.ui.screens.dashboard
 
 import androidx.compose.foundation.background

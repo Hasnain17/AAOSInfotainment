@@ -1,7 +1,3 @@
-// ============================================================
-// presentation/ui/screens/climate/ClimateScreen.kt
-// ============================================================
-
 package com.example.aaosdemo.presentation.ui.screens.climate
 
 import androidx.compose.foundation.background

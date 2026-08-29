@@ -1,24 +1,3 @@
-// ============================================================
-// domain/model/Repositories.kt
-// ============================================================
-// DOMAIN LAYER — Repository INTERFACES (contracts).
-//
-// These interfaces define WHAT the data layer must provide.
-// The domain layer doesn't care HOW it's implemented.
-//
-// Dependency Rule (Clean Architecture):
-//   Domain knows NOTHING about:
-//     - Android Car APIs
-//     - Hilt
-//     - Room / DataStore
-//   It only knows its own models and Kotlin primitives.
-//
-// In real AAOS:
-//   Implementations call CarHvacManager, CarPropertyManager, etc.
-// In this demo:
-//   Implementations use a FakeVhalDataSource (simulated data).
-// ============================================================
-
 package com.example.aaosdemo.domain.model
 
 import kotlinx.coroutines.flow.Flow

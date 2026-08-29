@@ -1,7 +1,3 @@
-// ============================================================
-// presentation/ui/screens/vehicle/VehicleScreen.kt
-// ============================================================
-
 package com.example.aaosdemo.presentation.ui.screens.vehicle
 
 import androidx.compose.foundation.background

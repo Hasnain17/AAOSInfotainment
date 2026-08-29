@@ -1,21 +1,3 @@
-// ============================================================
-// domain/usecase/UseCases.kt
-// ============================================================
-// DOMAIN LAYER — Use Cases (Interactors).
-//
-// Each Use Case represents ONE action your app can perform.
-// They sit between the ViewModel and the Repository.
-//
-// WHY use cases?
-//   • ViewModels stay thin — they just call use cases, not repository directly
-//   • Business logic (e.g. "fan can't be speed 0 if AC is on") lives here
-//   • Easy to unit test in isolation (just mock the repository)
-//   • Multiple ViewModels can share the same use case
-//
-// CONVENTION: Use cases are named with a VERB: ObserveSpeed, SetTemperature
-// They are callable via operator fun invoke() — so usage is: useCase()
-// ============================================================
-
 package com.example.aaosdemo.domain.usecase
 
 import com.example.aaosdemo.domain.model.*

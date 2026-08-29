@@ -1,16 +1,3 @@
-// ============================================================
-// domain/model/VehicleState.kt
-// ============================================================
-// DOMAIN LAYER — Pure Kotlin data classes.
-// NO Android imports. NO Car Service imports.
-// These models are the "language" of your app.
-//
-// Why keep them pure?
-//   • Testable without Android framework
-//   • Decoupled from VHAL property IDs (e.g. VehiclePropertyIds.PERF_VEHICLE_SPEED)
-//   • A mapping layer (DataSource) converts raw VHAL data → these models
-// ============================================================
-
 package com.example.aaosdemo.domain.model
 
 // ── VEHICLE SPEED ──────────────────────────────────────────────────────────

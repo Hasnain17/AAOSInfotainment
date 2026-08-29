@@ -1,25 +1,3 @@
-// ============================================================
-// data/datasource/FakeVhalDataSource.kt
-// ============================================================
-// DATA LAYER — Fake DataSource (simulates Android Car Services).
-//
-// In a REAL AAOS app, this class would:
-//   1. Hold a reference to CarPropertyManager, CarHvacManager etc.
-//   2. Use callbackFlow { } to wrap their callback-based APIs into Flow.
-//   3. Be annotated @Singleton and injected by Hilt.
-//
-// Since this demo runs on any Android device (no AAOS system image),
-// we use coroutine timers to emit realistic fake data.
-//
-// The PATTERN is identical to real AAOS — only the emission source differs.
-//
-// KEY KOTLIN FLOW CONCEPTS DEMONSTRATED:
-//   • StateFlow   — hot stream, holds current value, perfect for UI state
-//   • callbackFlow — wraps callback APIs into cold Flow
-//   • flow { }    — cold stream, starts fresh per collector
-//   • MutableStateFlow.update() — thread-safe state mutation
-// ============================================================
-
 package com.example.aaosdemo.data.datasource
 
 import com.example.aaosdemo.domain.model.*
